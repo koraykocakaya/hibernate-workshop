@@ -6,7 +6,7 @@ import com.kk.bookstore.domain.Message;
 import com.kk.bookstore.util.HibernateUtil;
 
 /**
- * flush metodu transaction commitlenmeden dirty check varsa onun DB'ye yazilmasini saglamaktadir
+ * 1. flush metodu transaction commitlenmeden dirty check varsa onun DB'ye yazilmasini saglamaktadir
  * @author korayk
  *
  */

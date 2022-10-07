@@ -15,7 +15,7 @@ import com.kk.bookstore.util.HibernateUtil;
  * @author korayk
  *
  */
-public class HelloWorldClient06 {
+public class HelloWorldClient06OneToOne {
 	public static void main(String[] args) {
 		Session sessionOld = HibernateUtil.getSessionFactory().openSession();
 		sessionOld.close();

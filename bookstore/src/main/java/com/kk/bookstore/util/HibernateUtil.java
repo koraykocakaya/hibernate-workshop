@@ -3,6 +3,8 @@ package com.kk.bookstore.util;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.persistence.EntityManagerFactory;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
@@ -19,6 +21,7 @@ import com.kk.bookstore.domain.Message;
 import com.kk.bookstore.domain.Movie;
 import com.kk.bookstore.domain.Passport;
 import com.kk.bookstore.domain.Person;
+import com.kk.bookstore.domain.Player;
 import com.kk.bookstore.domain.Publisher;
 import com.kk.bookstore.domain.Student;
 
@@ -56,6 +59,7 @@ public class HibernateUtil {
     	  metadataSources.addAnnotatedClass(Passport.class);
     	  metadataSources.addAnnotatedClass(Movie.class);
     	  metadataSources.addAnnotatedClass(Actor.class);
+    	  metadataSources.addAnnotatedClass(Player.class);
     	  Metadata metadata = metadataSources.buildMetadata();
 
     	  // here we build the SessionFactory (Hibernate 5.4)

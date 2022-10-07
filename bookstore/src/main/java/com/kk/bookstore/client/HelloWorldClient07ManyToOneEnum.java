@@ -14,7 +14,7 @@ import com.kk.bookstore.util.HibernateUtil;
  * @author korayk
  *
  */
-public class HelloWorldClient07 {
+public class HelloWorldClient07ManyToOneEnum {
 	public static void main(String[] args) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
